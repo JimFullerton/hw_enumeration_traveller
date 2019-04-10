@@ -47,7 +47,7 @@ describe('Traveller', () => {
     expect(traveller.getJourneyEndLocations()).toEqual(expected);
   });
 
-  xtest('should be able to get journeys by transport', () => {
+  test('should be able to get journeys by transport', () => {
     const expected = [
       journey1,
       journey2
@@ -55,7 +55,7 @@ describe('Traveller', () => {
     expect(traveller.getJourneysByTransport('train')).toEqual(expected);
   });
 
-  xtest('should be able to get journeys over a certain distance', () => {
+  test('should be able to get journeys over a certain distance', () => {
     const expected = [
       journey3,
       journey4
@@ -63,7 +63,7 @@ describe('Traveller', () => {
     expect(traveller.getJourneysByMinDistance(1000)).toEqual(expected)
   });
 
-  xtest('should be able to calculate total distance travelled', () => {
+  test('should be able to calculate total distance travelled', () => {
     expect(traveller.calculateTotalDistanceTravelled()).toBe(11710);
   });
 
