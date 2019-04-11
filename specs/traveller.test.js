@@ -67,7 +67,7 @@ describe('Traveller', () => {
     expect(traveller.calculateTotalDistanceTravelled()).toBe(11710);
   });
 
-  xtest('should be able to get a unique list of the modes of transport', () => {
+  test('should be able to get a unique list of the modes of transport', () => {
     const expected = [ 'train', 'aeroplane', 'car', 'ferry' ];
     expect(traveller.getUniqueModesOfTransport()).toEqual(expected);
   });
